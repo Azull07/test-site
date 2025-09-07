@@ -14,8 +14,9 @@ p {
 }
 
 h6 {
-    background-color: azure;
+    background-color: yellow;
     text-align: left;
     color: dark-black;
+    font-size: 60px;
 }
 p2 { font-size: 25px; }
