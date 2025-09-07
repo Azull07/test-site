@@ -17,6 +17,10 @@ h6 {
     background-color: yellow;
     text-align: left;
     color: dark-black;
-    font-size: 60px;
+    font-size: 20px;
 }
 p2 { font-size: 25px; }
+button { Background-color: black;
+        text-align: left;
+        color: white;
+        font-size 30px; }
