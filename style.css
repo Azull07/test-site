@@ -9,7 +9,7 @@ h1 {
     color: #ff4500;
 }
 
-p {
+p { border: solid 2px; width:20px;
     font-size: 18px;
 }
 
