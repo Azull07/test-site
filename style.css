@@ -19,8 +19,7 @@ img { border-radius: 15px; }
     font-size: 20px;
     display: inline-block;
 }
-a-container { 
-  text-align: left; }
+a-container { text-align: left; }
 a { font-size: 20px; display: inline-block; margin-right: 15px; paddin-left: 10px; text-decoration: none; font-weight: bold; color: purple; }
 p2 { font-size: 25px; }
 button { Background-color: black;
