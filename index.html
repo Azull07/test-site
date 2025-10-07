@@ -18,23 +18,30 @@
       color: #333;
       line-height: 1.5;
       text-align: center;
-      padding: 20px;
+    }
+
+    /* 🔹 Container general pentru lățime mai mare */
+    .container {
+      width: 90%;                /* mai lat decât înainte */
+      max-width: 1400px;         /* limita pe ecrane foarte mari */
+      margin: 0 auto;
+      padding: 30px 0;
     }
 
     h1 {
       color: #003366;
       margin-bottom: 10px;
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
-    /* 🔵 Bara cu gradient (descrierea principală) */
+    /* 🔵 Bara cu gradient */
     .descriere-box {
       background: linear-gradient(90deg, #004080, #3399ff);
       color: white;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 500;
       text-align: center;
-      padding: 15px 10px;
+      padding: 18px 10px;
       width: 100vw;
       position: relative;
       left: 50%;
@@ -47,10 +54,10 @@
 
     img {
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       height: auto;
       border-radius: 10px;
-      margin: 15px 0;
+      margin: 20px 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
@@ -58,19 +65,20 @@
       font-style: italic;
       color: #007700;
       margin: 15px 0;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     h2 {
       margin-top: 25px;
       color: #00264d;
+      font-size: 1.5rem;
     }
 
     ul {
       list-style: none;
-      margin: 20px auto;
+      margin: 25px auto;
       padding: 0;
-      max-width: 400px;
+      max-width: 700px; /* lista e mai lată acum */
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -80,9 +88,9 @@
     li {
       display: flex;
       justify-content: space-between;
-      padding: 12px 20px;
+      padding: 14px 25px;
       border-bottom: 1px solid #ddd;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     li:last-child {
@@ -96,6 +104,7 @@
 
     p {
       margin: 15px 0;
+      font-size: 1rem;
     }
 
     .a-container {
@@ -103,17 +112,18 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 15px;
     }
 
     .a-container a {
       text-decoration: none;
       color: #003366;
       font-weight: bold;
-      padding: 8px 14px;
+      padding: 10px 18px;
       border-radius: 8px;
       background: #e6f0ff;
       transition: background 0.3s;
+      font-size: 1rem;
     }
 
     .a-container a:hover {
@@ -124,12 +134,12 @@
       background-color: #007BFF;
       color: white;
       border: none;
-      padding: 12px 25px;
+      padding: 14px 30px;
       border-radius: 8px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       cursor: pointer;
       transition: background 0.3s;
-      margin-top: 15px;
+      margin-top: 20px;
     }
 
     button:hover {
@@ -146,14 +156,14 @@
         padding: 12px 8px;
       }
       li {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        padding: 10px 15px;
       }
-    }
-
-    @media (min-width: 1024px) {
-      body {
-        max-width: 900px;
-        margin: 0 auto;
+      img {
+        max-width: 90%;
+      }
+      .container {
+        width: 95%;
       }
     }
   </style>
@@ -162,41 +172,44 @@
 <body>
   <h1>Bun venit pe site-ul meu pentru închiriat mașini 🚀</h1>
 
-  <!-- 🔵 Textul în bara cu gradient -->
+  <!-- 🔵 Bara cu gradient -->
   <p class="descriere-box">Acesta este primul meu site — de aici poți închiria mașina de care ai nevoie.</p>
 
-  <img src="pexels-orestsv-2062555.jpg" alt="Mașină Albastră">
+  <!-- 🔸 Conținutul principal mai lat -->
+  <div class="container">
+    <img src="pexels-orestsv-2062555.jpg" alt="Mașină Albastră">
 
-  <h6 class="reclama">Avem prețul care pentru tine contează</h6>
+    <h6 class="reclama">Avem prețul care pentru tine contează</h6>
 
-  <img src="masini fata in fata.jpg" alt="Mașinile">
+    <img src="masini fata in fata.jpg" alt="Mașinile">
 
-  <h2>Lista de prețuri</h2>
+    <h2>Lista de prețuri</h2>
 
-  <ul>
-    <li>Chevrolet Spark <span>50 lei/zi</span></li>
-    <li>Renault Megane <span>80 lei/zi</span></li>
-    <li>Opel Corsa <span>90 lei/zi</span></li>
-  </ul>
+    <ul>
+      <li>Chevrolet Spark <span>50 lei/zi</span></li>
+      <li>Renault Megane <span>80 lei/zi</span></li>
+      <li>Opel Corsa <span>90 lei/zi</span></li>
+    </ul>
 
-  <p style="color: green;">Știm ce mașină ți se potrivește!</p>
+    <p style="color: green;">Știm ce mașină ți se potrivește!</p>
 
-  <img src="masina rosie.jpg" alt="Mașină Roșie">
+    <img src="masina rosie.jpg" alt="Mașină Roșie">
 
-  <p style="color: brown; font-family: papyrus; font-size: large; text-align: left;">
-    <strong><em>Partenerii noștri:</em></strong>
-  </p>
+    <p style="color: brown; font-family: papyrus; font-size: large; text-align: left;">
+      <strong><em>Partenerii noștri:</em></strong>
+    </p>
 
-  <div class="a-container">
-    <a href="https://mobile.de" target="_blank">mobile.de</a>
-    <a href="https://autovit.ro" target="_blank">autovit.ro</a>
-    <a href="https://olx.ro" target="_blank">olx.ro</a>
+    <div class="a-container">
+      <a href="https://mobile.de" target="_blank">mobile.de</a>
+      <a href="https://autovit.ro" target="_blank">autovit.ro</a>
+      <a href="https://olx.ro" target="_blank">olx.ro</a>
+    </div>
+
+    <p>Contactează-ne la numărul de telefon afișat mai jos</p>
+
+    <a href="tel:+40712345678">
+      <button>Suna acum</button>
+    </a>
   </div>
-
-  <p>Contactează-ne la numărul de telefon afișat mai jos</p>
-
-  <a href="tel:+40712345678">
-    <button>Suna acum</button>
-  </a>
 </body>
 </html>
