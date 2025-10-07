@@ -4,40 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Azull's site</title>
-  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
-      text-align: center;
+    /* RESET */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.5;
+      text-align: center;
       padding: 20px;
     }
 
     h1 {
       color: #003366;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
     }
 
     .descriere {
-      color: #333;
-      font-size: 1.1em;
+      color: #444;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .reclama {
+      font-style: italic;
+      color: #007700;
+      margin: 15px 0;
+      font-size: 1rem;
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #00264d;
     }
 
     ul {
-      list-style-type: none;
+      list-style: none;
+      margin: 20px auto;
       padding: 0;
-      max-width: 300px;
-      margin: 0 auto;
+      max-width: 400px;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
     }
 
     li {
       display: flex;
       justify-content: space-between;
-      padding: 10px 20px;
-      border-bottom: 1px solid #ccc;
+      padding: 12px 20px;
+      border-bottom: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    li:last-child {
+      border-bottom: none;
     }
 
     li span {
@@ -45,37 +82,66 @@
       font-weight: bold;
     }
 
-    li:last-child {
-      border-bottom: none;
+    p {
+      margin: 15px 0;
     }
 
-    .reclama {
-      font-style: italic;
-      color: #007700;
+    .a-container {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .a-container a {
-      margin: 0 10px;
       text-decoration: none;
       color: #003366;
       font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: #e6f0ff;
+      transition: background 0.3s;
     }
 
     .a-container a:hover {
-      color: #ff6600;
+      background: #cce0ff;
     }
 
     button {
       background-color: #007BFF;
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 8px;
+      font-size: 1rem;
       cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 15px;
     }
 
     button:hover {
       background-color: #0056b3;
+    }
+
+    /* --- RESPONSIVE DESIGN --- */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .descriere {
+        font-size: 1rem;
+      }
+      li {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+      }
     }
   </style>
 </head>
@@ -85,11 +151,11 @@
 
   <p class="descriere">Acesta este primul meu site — de aici poți închiria mașina de care ai nevoie.</p>
 
-  <img src="pexels-orestsv-2062555.jpg" alt="Mașină Albastră" height="250" width="250">
+  <img src="pexels-orestsv-2062555.jpg" alt="Mașină Albastră">
 
   <h6 class="reclama">Avem prețul care pentru tine contează</h6>
 
-  <img src="masini fata in fata.jpg" alt="Mașinile" height="200" width="200">
+  <img src="masini fata in fata.jpg" alt="Mașinile">
 
   <h2>Lista de prețuri</h2>
 
@@ -101,7 +167,7 @@
 
   <p style="color: green;">Știm ce mașină ți se potrivește!</p>
 
-  <img src="masina rosie.jpg" alt="Mașină Roșie" height="200" width="200">
+  <img src="masina rosie.jpg" alt="Mașină Roșie">
 
   <p style="color: brown; font-family: papyrus; font-size: large; text-align: left;">
     <strong><em>Partenerii noștri:</em></strong>
