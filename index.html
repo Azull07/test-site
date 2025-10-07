@@ -27,10 +27,22 @@
       font-size: 1.8rem;
     }
 
-    .descriere {
-      color: #444;
+    /* 🔵 Bara cu gradient (descrierea principală) */
+    .descriere-box {
+      background: linear-gradient(90deg, #004080, #3399ff);
+      color: white;
       font-size: 1.1rem;
-      margin-bottom: 20px;
+      font-weight: 500;
+      text-align: center;
+      padding: 15px 10px;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      box-sizing: border-box;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     }
 
     img {
@@ -38,7 +50,7 @@
       max-width: 300px;
       height: auto;
       border-radius: 10px;
-      margin: 10px 0;
+      margin: 15px 0;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
@@ -129,8 +141,9 @@
       h1 {
         font-size: 1.5rem;
       }
-      .descriere {
+      .descriere-box {
         font-size: 1rem;
+        padding: 12px 8px;
       }
       li {
         font-size: 0.95rem;
@@ -149,7 +162,8 @@
 <body>
   <h1>Bun venit pe site-ul meu pentru închiriat mașini 🚀</h1>
 
- <p class="descriere-box">Acesta este primul meu site — de aici poți închiria mașina de care ai nevoie.</p>
+  <!-- 🔵 Textul în bara cu gradient -->
+  <p class="descriere-box">Acesta este primul meu site — de aici poți închiria mașina de care ai nevoie.</p>
 
   <img src="pexels-orestsv-2062555.jpg" alt="Mașină Albastră">
 
@@ -181,6 +195,8 @@
 
   <p>Contactează-ne la numărul de telefon afișat mai jos</p>
 
-  <button>Telefon</button>
+  <a href="tel:+40712345678">
+    <button>Suna acum</button>
+  </a>
 </body>
 </html>
