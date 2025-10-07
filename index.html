@@ -1,43 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Azull's site</title>
-    <style>
-    ul { margin: 0; }
-    li { display: flex; }
-    li:last-child { border-bottom: none; }
-    li span { color: red; }
-    </style>
-  </head>
-  <body>
-    <h1>Bun venit pe site-ul meu pentru inchiriat masini 🚀</h1>
-    <p class="descriere">Acesta este primul meu site, de aici poti inchiria masina de care ai nevoie</p>
-    <br>
-    <img src="pexels-orestsv-2062555.jpg" alt="Masina Albastra" height="250" width="250">
-    <br>
-    <h6 class="reclama">Avem pretul care pentru tine conteaza</h6>
-    <br>
-    <img src="masini fata in fata.jpg" alt="masinile" height="200" width="200">
-    <br>
-    <h2>Lista de preturi</h2>
-    <ul>
-    <li>Chevrolet Spark - <span>50 lei/zi</span></li>
-    <li>Renault Megane - <span>80 lei/zi</span></li>
-    <li>Opel Corsa - <span>90 lei/zi</span></li>
-    </ul>
-    <p style="color: green;">Stim ce masina ti se potriveste!</p>
-    <img src="masina rosie.jpg" alt="masina rosie" height="200" width="200">
-    <br><br><br>
-      <p style="color: brown; font-family: papyrus; font-size: large; text-align: left;"><strong><em>Partenerii nostri:<em><strong></p>
-      <div class="a-container">
-      <a href="http://mobile.de">mobile.de</a> 
-      <a href="http://autovit.ro">autovit</a>
-      <a href="http://olx.ro">olx</a>
-      </div>
-      <br><br><br>
-    <p2>Contacteaza-ne la numarul de telefon afisat mai jos</p2>
-    <br><br><br>
-    <button>Telefon</button>
-  </body>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azull's site</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #003366;
+    }
+
+    .descriere {
+      color: #333;
+      font-size: 1.1em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      max-width: 300px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    li span {
+      color: red;
+      font-weight: bold;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    .reclama {
+      font-style: italic;
+      color: #007700;
+    }
+
+    .a-container a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    .a-container a:hover {
+      color: #ff6600;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Bun venit pe site-ul meu pentru închiriat mașini 🚀</h1>
+
+  <p class="descriere">Acesta este primul meu site — de aici poți închiria mașina de care ai nevoie.</p>
+
+  <img src="pexels-orestsv-2062555.jpg" alt="Mașină Albastră" height="250" width="250">
+
+  <h6 class="reclama">Avem prețul care pentru tine contează</h6>
+
+  <img src="masini fata in fata.jpg" alt="Mașinile" height="200" width="200">
+
+  <h2>Lista de prețuri</h2>
+
+  <ul>
+    <li>Chevrolet Spark <span>50 lei/zi</span></li>
+    <li>Renault Megane <span>80 lei/zi</span></li>
+    <li>Opel Corsa <span>90 lei/zi</span></li>
+  </ul>
+
+  <p style="color: green;">Știm ce mașină ți se potrivește!</p>
+
+  <img src="masina rosie.jpg" alt="Mașină Roșie" height="200" width="200">
+
+  <p style="color: brown; font-family: papyrus; font-size: large; text-align: left;">
+    <strong><em>Partenerii noștri:</em></strong>
+  </p>
+
+  <div class="a-container">
+    <a href="https://mobile.de" target="_blank">mobile.de</a>
+    <a href="https://autovit.ro" target="_blank">autovit.ro</a>
+    <a href="https://olx.ro" target="_blank">olx.ro</a>
+  </div>
+
+  <p>Contactează-ne la numărul de telefon afișat mai jos</p>
+
+  <button>Telefon</button>
+</body>
 </html>
